@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Zad2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<nav class='navbar navbar-default'>
+    <div class='container'>
+        <div class="navbar-header">
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+        <div class='page-header'>
+            <h1>Wypełnij formularz</h1>
+        </div>
+        <div class='panel'>
+            <div class='panel-body'>
+                <form action="upload_file.php" method="post">
+                    <div class='form-group'>
+                        <label>Nazwa:</label>
+                        <input type="text" class='form-control' id='name' name="name">
+                        <label>Email:</label>
+                        <input type="text" class='form-control' id='email' name="email">
+                        <label>Telefon:</label>
+                        <input type="number" class='form-control'  id='tel' name="tel">
+                        <label>Numer:</label>
+                        <input type="number" class='form-control'  id='number' name="number">
+                        
+                        <label for="upload-imgs">Wybierz zdjęcie:</label>
+                        <input class="show-for-sr" type="file" id="upload-imgs" name="upload-imgs[]" multiple/> 
+                        <div class="add-imgs add-imgs--hidden" id="img-preview" aria-live="polite"></div>
+                    </div>                   
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="agree-conditions"> Zgadzam się na warunki...</label>
+                        <label><input type="checkbox" id="agree-data"> Wyrazam zgodę na przetwarzanie...</label>
+                    </div>
+                    <p>
+                        <button class='btn btn-primary'>Zatwierdź</button>
+                    </p>
+                    <div class="info-container">
+                        <div class="error-message"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/zad2.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,21 @@
+ .error-message {
+  color : #ed2553;
+}
+
+.add-imgs {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 1em;
+}
+.add-imgs--hidden {
+  display: none;
+}
+.img-preview {
+  background: #fff;
+  border: 1px solid #777;
+  border-radius: 4px;
+  max-width: 200px;
+  padding: 1px;
+}
+
